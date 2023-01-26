@@ -98,7 +98,8 @@ public class ExoticGarden extends JavaPlugin implements SlimefunAddon {
 
         // Auto Updater
         if (cfg.getBoolean("options.auto-update") && getDescription().getVersion().startsWith("Build")) {
-            GuizhanBuildsUpdaterWrapper.start(this, getFile(), "ybw0014", "ExoticGarden", "master", false);
+            GuizhanBuildsUpdaterWrapper.start(this, getFile(), "SlimefunGuguProject", "ExoticGarden-changed", "master",
+                false);
         }
 
         registerItems();
